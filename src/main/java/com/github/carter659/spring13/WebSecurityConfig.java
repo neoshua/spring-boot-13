@@ -48,7 +48,7 @@ public class WebSecurityConfig extends WebMvcConfigurerAdapter {
 			if (session.getAttribute(SESSION_KEY) != null)
 				return true;
 
-			// 跳转登录
+			// 跳转登录  as
 			String url = "/login";
 			response.sendRedirect(url);
 			return false;
